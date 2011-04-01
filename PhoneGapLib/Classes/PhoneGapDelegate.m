@@ -470,6 +470,13 @@ static NSString *gapVersion;
     {
         return YES;
     }
+	/* 
+     * 
+     */ 
+    else if ( [ [url scheme] isEqualToString:@"tel"] )
+	{ 
+        return YES; 
+    } 
 	else if ( [ [url scheme] isEqualToString:@"http"] || [ [url scheme] isEqualToString:@"https"] ) 
 	{
 		if(navigationType == UIWebViewNavigationTypeOther)
